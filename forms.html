@@ -3,10 +3,15 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Sample Form</title>
-	<link rel="stylesheet" type="text/css" href="css/formStyle.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/formStyle.css"> -->
+<!-- should just put this in CSS for styling -->
 	<style>
-		input{
+		/* input{
 			display: block;
+		} */
+		label{
+			display: inline-block;
+			width: 33%;
 		}
 		input:focus{
 			background: yellow
@@ -15,19 +20,19 @@
 </head>
 <body>
 
-<form action="https://formspree.io/your@email.com" method="POST">
+<form action="https://formspree.io/b.assavanop@gmail.com" method="POST">
 	<fieldset>
 		<legend>Personal Information:</legend>
 		<label for="name">Name</label>
-		<input type="text" id = "name" name="name" placeholder = "Paryn"><br/>
+		<input type="text" id = "name" name="name" placeholder = "Paryn"><br><br>
 		<label for="email">Email</label>
-		<input type="email" value = "email@umich.edu"><br/>
+		<input type="email" value = "email@umich.edu"><br><br>
 		<label for="confirm email">Confirm Email</label>
-		<input type="text" placeholder="retype your email"><br/>
+		<input type="text" placeholder="retype your email"><br><br>
 		<label for="birth">Date of birth:</label>
-		<input type="date" id = "birth" name="birthday"><br>
+		<input type="date" id = "birth" name="birthday"><br><br>
 		<label for="color">Favorite Color</label>
-		<input type="color" id="fav color">
+		<input type="color" id="fav color" value="#ff0000"><br><br>
 		<input type = "submit" value = "Click to save">
 	</fieldset>
 </form>
