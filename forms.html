@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sample Form</title>
+	<link rel="stylesheet" type="text/css" href="css/formStyle.css">
+	<style>
+		input{
+			display: block;
+		}
+		input:focus{
+			background: yellow
+		}
+	</style>
+</head>
+<body>
+
+
+<form action="" method = "post">
+	<fieldset>
+		<legend>Personal Information:</legend>
+		<label for="name">Name</label>
+		<input type="text" id = "name" name="name" placeholder = "Paryn"><br/>
+		<label for="email">Email</label>
+		<input type="email" value = "email@umich.edu"><br/>
+		<label for="confirm email">Confirm Email</label>
+		<input type="text" placeholder="retype your email"><br/>
+		<label for="birth">Date of birth:</label>
+		<input type="date" id = "birth" name="birthday"><br>
+		<label for="color">Favorite Color</label>
+		<input type="color" id="fav color">
+		<input type = "submit" value = "Click to save">
+	</fieldset>
+</form>
+</body>
+</html>
